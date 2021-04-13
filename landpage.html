@@ -232,13 +232,15 @@
 
     <script>
         $(document).ready(function(){
-            function switchElements($trocar1, $trocar2) {
-                $trocar1.before($trocar2);
+            if (parseInt($(window).width()) < 768) {
+                function switchElements($trocar1, $trocar2) {
+                    $trocar1.before($trocar2);
+                }
+                switchElements($('.trocar1'), $('.trocar2'));
+                switchElements($('.trocar3'), $('.trocar4'));
+                switchElements($('.trocar5'), $('.trocar6'));
+                switchElements($('.trocar7'), $('.trocar8'));
             }
-            switchElements($('.trocar1'), $('.trocar2'));
-            switchElements($('.trocar3'), $('.trocar4'));
-            switchElements($('.trocar5'), $('.trocar6'));
-            switchElements($('.trocar7'), $('.trocar8'));
         });
     </script>
 
