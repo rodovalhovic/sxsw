@@ -1,0 +1,81 @@
+body{
+    font-family: 'Rounded Light' !important;
+}
+
+#login{
+    background-image: url('./img/bg/fundo-login.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#login .container .topo-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 200px;
+    padding-bottom: 81px;
+}
+
+#login .container img{
+    width: auto;
+    height: 140px;
+}
+
+#login .container .topo-wrapper .acesso{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+#login .container .topo-wrapper .acesso .login{
+    font-family: 'Rounded Bold';
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #ffffff;
+    padding-top: 60px;
+    letter-spacing: 1px;
+}
+
+#login .container .topo-wrapper .acesso .email{
+    border-radius: 22px;
+    border: none;
+    width: 55%;
+    height: 50px;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+#login .container .topo-wrapper .acesso .botao{
+    font-size: 20px;
+    margin-top: 20px;
+    border-radius: 25px;
+    width: 140px;
+    height: 50px;
+    border: 0;
+}
+
+#login .container .topo-wrapper .acesso .aviso{
+    margin-top: 46px;
+    font-size: 26px;
+    color: #ffffff;
+    text-align: center;
+}
+
+@media (max-width: 768px){
+    #login .container img{
+        height: 100px;
+    }
+
+    #login .container .topo-wrapper .acesso .login{
+        padding-top: 70px;
+    }
+
+    #login .container .topo-wrapper .acesso .email{
+        width: 90%;
+    }
+
+    #login .container .topo-wrapper .acesso .aviso{
+        font-size: 20px;
+    }
+}
